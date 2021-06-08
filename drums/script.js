@@ -1,7 +1,10 @@
 console.log('Drum Roll')
 
 //Press keys and then get the info
-window.addEventListener('keydown', function(e){
+window.addEventListener('keydown', playSound);
+
+//Play Sound
+function playSound(e){
     console.log(e)
     //shows the number of the keys
     console.log(e.keyCode)
@@ -23,7 +26,9 @@ window.addEventListener('keydown', function(e){
     //Adding the class to create animation to the keys when clicked
     key.classList.add('playing')
 
-});
+
+
+}
 
     //Transition end event
     function removeTransition(e){
