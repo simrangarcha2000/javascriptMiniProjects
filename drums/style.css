@@ -43,6 +43,14 @@ kbd{
     color: white;
     border: solid 1px lightblue;
     margin: 0.2rem;
+
+    transition: all 0.07s;
+}
+
+.playing{
+    transform: scale(1.1);
+    border-color: lightslategray;
+    box-shadow: 0 0 10px lightblue;
 }
 
 @media only screen and (max-width: 600px) {
